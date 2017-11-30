@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/myTextView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="生成二维码"
+        android:textColor="#00F" />
+
+    <!-- 设置EditText可接收输入的长度62个字元 -->
+    <EditText
+        android:id="@+id/inputET"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="在此输入需要生成的二维码内容"
+        android:maxLength="62"
+        android:text=""
+        android:textSize="18sp" >
+    </EditText>
+
+    <SurfaceView
+        android:id="@+id/mSurfaceView1"
+        android:layout_width="320sp"
+        android:layout_height="240sp"
+        android:visibility="visible" >
+    </SurfaceView>
+
+    <ImageView
+        android:id="@+id/myImageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" />
+
+    <Button
+        android:id="@+id/genQR_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="生成" />
+
+</LinearLayout>
