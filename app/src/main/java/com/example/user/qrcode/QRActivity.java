@@ -91,7 +91,7 @@ public class QRActivity extends AppCompatActivity implements SurfaceHolder.Callb
                 boolean[][] bEncoding = testQrcode.calQrcode(bytesEncoding);
 
                 /* 依据编码后的boolean数组，绘图*/
-                drawQRCode(bEncoding, getResources().getColor(R.drawable.black);
+                drawQRCode(bEncoding, getResources().getColor(R.color.BLACK));
             }
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
@@ -106,7 +106,7 @@ public class QRActivity extends AppCompatActivity implements SurfaceHolder.Callb
         Canvas mCanvas01 = mSurfaceHolder01.lockCanvas();
 
         /* 设置画布绘制颜色 */
-        mCanvas01.drawColor(getResources().getColor(android.R.drawable.white));
+        mCanvas01.drawColor(getResources().getColor(R.color.WHITE));
 
         /*创建画笔*/
         Paint paint = new Paint();
